@@ -25,7 +25,7 @@ public class ScheduledTasks {
 		timeNow-=20000;
 		
 		
-        System.out.println("Running scheduled task at: " + new Date());
-        System.out.println("Deleted Transactions: " + transactionService.deleteOutdatedTransactions(timeNow));
+        //System.out.println("Running scheduled task at: " + new Date());
+        //System.out.println("Deleted Transactions: " + transactionService.deleteOutdatedTransactions(timeNow));
     }
 }

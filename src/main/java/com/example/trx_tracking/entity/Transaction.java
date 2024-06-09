@@ -14,6 +14,12 @@ public class Transaction {
     private Long id;
 	@Column(name = "timesignature")
 	private Long timesignature;
+	@Column(name = "source")
+	private Long source;
+	@Column(name = "destination")
+	private Long destination;
+	@Column(name = "amount")
+	private String amount;
 
 	public Long getId() {
 		return id;
@@ -31,5 +37,28 @@ public class Transaction {
 		this.timesignature = timesignature;
 	}
 
+	public Long getSource() {
+		return source;
+	}
+
+	public void setSource(Long source) {
+		this.source = source;
+	}
+
+	public Long getDestination() {
+		return destination;
+	}
+
+	public void setDestination(Long destination) {
+		this.destination = destination;
+	}
+
+	public String getAmount() {
+		return amount;
+	}
+
+	public void setAmount(String amount) {
+		this.amount = amount;
+	}
 	
 }
