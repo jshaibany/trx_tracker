@@ -32,4 +32,9 @@ public class TransactionService {
 		
 		return transactionRepository.save(trx);
 	}
+	
+	public int deleteOutdatedTransactions(Long timeStamp){
+		
+		return transactionRepository.deleteOutdatedTransactions(timeStamp);
+	}
 }

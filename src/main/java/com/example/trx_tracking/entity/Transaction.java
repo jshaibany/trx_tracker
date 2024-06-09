@@ -12,6 +12,7 @@ public class Transaction {
 	@Id
 	@Column(name = "transaction_id",unique = true)
     private Long id;
+	@Column(name = "timesignature")
 	private Long timesignature;
 
 	public Long getId() {
